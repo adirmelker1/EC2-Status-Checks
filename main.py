@@ -8,4 +8,3 @@ for status in statuses['InstanceStatuses']:
     InstanceId = status['InstanceId']
     print(f"Instance {InstanceId} State: {state}, Instance Status: {ins_status}, System Status: {sys_status}")
 
-    ##aa
