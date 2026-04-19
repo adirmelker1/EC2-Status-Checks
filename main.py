@@ -14,7 +14,7 @@ def check_instance_status():
         InstanceId = status['InstanceId']
         print(f"Instance {InstanceId} State: {state}, Instance Status: {ins_status}, System Status: {sys_status}")
     print("####################################\n")
-schedule.every(3).seconds.do(check_instance_status)
+schedule.every(3).minutes.do(check_instance_status)
 
 while True:
     schedule.run_pending()
